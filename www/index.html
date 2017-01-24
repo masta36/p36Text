@@ -48,12 +48,29 @@
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
+			<p><input type=Button text="Record" onclick="doSpeechRecognition()">Record </Button></p>
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
+		
+	function doSpeechRecognition() {
+    if(SpeechRecognition) {
+       SpeechRecognition.recordButtonTapped(
+           '15',  // ex. 15 seconds limitation for Speech
+           function(returnMessage){
+               console.log(returnMessage); // onSuccess
+			   alert("returnMessage");
+           },
+           function(errorMessage) {
+               console.log(errorMessage); // onError
+			    alert("returnMessage");
+           }
+       )
+    }
+};
     </script>
 </body>
 
