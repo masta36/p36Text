@@ -57,6 +57,8 @@
 		CD4452CA01134536AE762BF9 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5B000E90064F1B86A9683A /* CDVViewController+SplashScreen.m */; };
 		6259AC29A4394BFEBAE43E2D /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D7614424B6A24066AE099258 /* CDVStatusBar.m */; };
 		2DF1DCAE665748FC9F1A3842 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = D48103D917454876926A35B0 /* CDVVibration.m */; };
+		1F13E71BE95F497FB3407908 /* SpeechRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = A167DC9CC3AC4FD69308A118 /* SpeechRecognition.m */; };
+		10C4894AF6864679B22D581D /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561F741C4E194443A1374395 /* Speech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +169,9 @@
 		6441649183C74201B8B35790 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		D48103D917454876926A35B0 /* CDVVibration.m */ = {isa = PBXFileReference; name = "CDVVibration.m"; path = "cordova-plugin-vibration/CDVVibration.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		F81815A0D09846A58221A53D /* CDVVibration.h */ = {isa = PBXFileReference; name = "CDVVibration.h"; path = "cordova-plugin-vibration/CDVVibration.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A167DC9CC3AC4FD69308A118 /* SpeechRecognition.m */ = {isa = PBXFileReference; name = "SpeechRecognition.m"; path = "cordova-plugin-speechrecognition/SpeechRecognition.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1430EE574FFA49B3A252B96B /* SpeechRecognition.h */ = {isa = PBXFileReference; name = "SpeechRecognition.h"; path = "cordova-plugin-speechrecognition/SpeechRecognition.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		561F741C4E194443A1374395 /* Speech.framework */ = {isa = PBXFileReference; name = "Speech.framework"; path = "System/Library/Frameworks/Speech.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +189,7 @@
 				072C98187E5E4BF5B0632C8A /* AudioToolbox.framework in Frameworks */,
 				84E03C6DC5E2441783D47133 /* SystemConfiguration.framework in Frameworks */,
 				1E795A20A9724913A6C5FED4 /* CoreTelephony.framework in Frameworks */,
+				10C4894AF6864679B22D581D /* Speech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +271,7 @@
 				439D093F419E4DF18224292B /* AudioToolbox.framework */,
 				59796FA84FC84CAAB664E636 /* SystemConfiguration.framework */,
 				808F68BFA8694525AC3F59E7 /* CoreTelephony.framework */,
+				561F741C4E194443A1374395 /* Speech.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -349,6 +356,8 @@
 				6441649183C74201B8B35790 /* CDVStatusBar.h */,
 				D48103D917454876926A35B0 /* CDVVibration.m */,
 				F81815A0D09846A58221A53D /* CDVVibration.h */,
+				A167DC9CC3AC4FD69308A118 /* SpeechRecognition.m */,
+				1430EE574FFA49B3A252B96B /* SpeechRecognition.h */,
 			);
 			name = Plugins;
 			path = "Hello World/Plugins";
@@ -493,6 +502,7 @@
 				CD4452CA01134536AE762BF9 /* CDVViewController+SplashScreen.m in Sources */,
 				6259AC29A4394BFEBAE43E2D /* CDVStatusBar.m in Sources */,
 				2DF1DCAE665748FC9F1A3842 /* CDVVibration.m in Sources */,
+				1F13E71BE95F497FB3407908 /* SpeechRecognition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

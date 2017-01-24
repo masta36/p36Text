@@ -103,6 +103,10 @@
                         {
                             "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpeechRecognition\"><param name=\"ios-package\" value=\"SpeechRecognition\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -113,6 +117,18 @@
                         {
                             "xml": "<string />",
                             "count": 2
+                        }
+                    ],
+                    "NSMicrophoneUsageDescription": [
+                        {
+                            "xml": "<string>Request to use Microphone</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSSpeechRecognitionUsageDescription": [
+                        {
+                            "xml": "<string>Request to use Speech Recognition</string>",
+                            "count": 1
                         }
                     ]
                 }
@@ -187,6 +203,9 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-speechrecognition": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
@@ -767,6 +786,14 @@
                 "navigator.notification",
                 "navigator"
             ]
+        },
+        {
+            "id": "cordova-plugin-speechrecognition.SpeechRecognition",
+            "file": "plugins/cordova-plugin-speechrecognition/www/speechRecognition.js",
+            "pluginId": "cordova-plugin-speechrecognition",
+            "merges": [
+                "window.plugins.speechRecognition"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -792,6 +819,7 @@
         "cordova-plugin-splashscreen": "3.2.2",
         "cordova-plugin-statusbar": "2.1.3",
         "cordova-plugin-vibration": "2.1.3",
-        "cordova-plugin-whitelist": "1.2.2"
+        "cordova-plugin-whitelist": "1.2.2",
+        "cordova-plugin-speechrecognition": "1.1.1"
     }
 }
