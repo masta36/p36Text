@@ -1,0 +1,10 @@
+{
+    "cordova-plugin-speech-recognition-feat-siri": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-speech-recognition-feat-siri"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
