@@ -74,6 +74,8 @@
 
 document.addEventListener('deviceready', function () {
 
+window.plugins.speechRecognition.requestPermission((function(){alert("OK")}), (function(){alert("no permission")}) );
+
 ThreeDeeTouch.configureQuickActions([
     {
       type: 'checkin', // optional, but can be used in the onHomeIconPressed callback
