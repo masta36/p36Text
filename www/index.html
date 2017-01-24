@@ -107,6 +107,7 @@ ThreeDeeTouch.configureQuickActions([
       } else {
         // hook up any other icons you may have and do something awesome (e.g. launch the Camera UI, then share the image to Twitter)
         console.log(JSON.stringify(payload));
+		navigator.app.exitApp();
       }
     }
   }, false);
