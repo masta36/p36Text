@@ -42,15 +42,18 @@
     <title>Hello World</title>
 </head>
 
-<body><form>
-    <div class="app">
+<body>
+    <div class="content">
         <h1>PhoneGap</h1>
-		<p><input type=Button value="start recording" onclick="record()">Record </Button></p>
-			<p><input type=Button value="Stop recording" onclick="stop()">Stop recording </Button></p>
+		 <div class="card">
+        <button class="btn btn-block btn-primary" id="startRec">Start Recording</button>
+		<button class="btn btn-block btn-primary" id="stopRec">Stop Recording</button>
     </div>
-	</form>
+		
+    </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
     <script type="text/javascript">
         app.initialize();
 		
@@ -81,6 +84,14 @@
 };
 
 document.addEventListener('deviceready', function () {
+
+ $('#startRec').click(function(){
+        alert("start");
+    });
+	
+	 $('#stopRec').click(function(){
+        alert("stop");
+    });
 
 window.plugins.speechRecognition.requestPermission((function(){alert("OK")}), (function(){alert("no permission")}) );
 
